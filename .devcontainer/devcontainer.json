@@ -1,0 +1,13 @@
+{
+  "name": "Lyra",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+  },
+  "forwardPorts": [5173, 6080],
+  "portsAttributes": {
+    "5173": { "label": "Vite dev server" },
+    "6080": { "label": "noVNC desktop (see the app window)" }
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y libgtk-3-0 libnotify4 libnss3 libxss1 libxtst6 libatspi2.0-0 libsecret-1-0 libgbm1 && npm install && node node_modules/electron/install.js"
+}

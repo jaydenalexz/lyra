@@ -1,0 +1,10 @@
+node_modules/
+out/
+dist/
+*.log
+.DS_Store
+.zcode/
+
+# rotating backups written by the app
+data/backups/
+*.tsbuildinfo
